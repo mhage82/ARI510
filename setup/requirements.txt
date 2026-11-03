@@ -1,0 +1,9 @@
+# Notebook interface and Python kernel
+notebook
+ipykernel
+
+# Dependencies used by the assignment notebook
+numpy
+pandas
+matplotlib
+scikit-learn
