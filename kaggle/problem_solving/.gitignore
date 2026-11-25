@@ -1,0 +1,5 @@
+# The competition does not allow redistribution of source text.
+/premature-problem-solving/
+/results/
+.venv/
+__pycache__/
