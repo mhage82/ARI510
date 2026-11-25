@@ -1,0 +1,94 @@
+{
+  "seed": 42,
+  "features": [
+    "frac_tree",
+    "frac_vegetation",
+    "frac_open_sky",
+    "frac_street",
+    "frac_sidewalk",
+    "frac_building",
+    "frac_vehicle",
+    "frac_urban_furniture",
+    "frac_shade_structure",
+    "frac_water",
+    "sky_blue",
+    "ground_shadow"
+  ],
+  "runs": {
+    "run1_logistic": {
+      "validation_accuracy": 0.7941176470588235,
+      "validation_macro_f1": 0.5147392290249433,
+      "classification_report": {
+        "Good/Excellent": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 4.0
+        },
+        "Moderate": {
+          "precision": 0.6875,
+          "recall": 0.6470588235294118,
+          "f1-score": 0.6666666666666666,
+          "support": 17.0
+        },
+        "Poor/Limited": {
+          "precision": 0.8431372549019608,
+          "recall": 0.9148936170212766,
+          "f1-score": 0.8775510204081632,
+          "support": 47.0
+        },
+        "accuracy": 0.7941176470588235,
+        "macro avg": {
+          "precision": 0.5102124183006537,
+          "recall": 0.5206508135168961,
+          "f1-score": 0.5147392290249433,
+          "support": 68.0
+        },
+        "weighted avg": {
+          "precision": 0.7546316320645905,
+          "recall": 0.7941176470588235,
+          "f1-score": 0.7732092837134853,
+          "support": 68.0
+        }
+      }
+    },
+    "run2_mlp": {
+      "validation_accuracy": 0.7058823529411765,
+      "validation_macro_f1": 0.45714285714285713,
+      "classification_report": {
+        "Good/Excellent": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 4.0
+        },
+        "Moderate": {
+          "precision": 0.5555555555555556,
+          "recall": 0.5882352941176471,
+          "f1-score": 0.5714285714285714,
+          "support": 17.0
+        },
+        "Poor/Limited": {
+          "precision": 0.7916666666666666,
+          "recall": 0.8085106382978723,
+          "f1-score": 0.8,
+          "support": 47.0
+        },
+        "accuracy": 0.7058823529411765,
+        "macro avg": {
+          "precision": 0.4490740740740741,
+          "recall": 0.46558197747183977,
+          "f1-score": 0.45714285714285713,
+          "support": 68.0
+        },
+        "weighted avg": {
+          "precision": 0.6860702614379084,
+          "recall": 0.7058823529411765,
+          "f1-score": 0.6957983193277312,
+          "support": 68.0
+        }
+      }
+    }
+  },
+  "best_by_validation_accuracy": "run1_logistic"
+}
